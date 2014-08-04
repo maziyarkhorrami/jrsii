@@ -1,0 +1,7 @@
+@mixin mits-link($primaryStyleName : v-link) {
+
+.#{$primaryStyleName} a {
+	color: #464f52;
+}
+
+}

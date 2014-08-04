@@ -1,0 +1,8 @@
+@mixin mits-absolutelayout($primaryStyleName : v-absolutelayout) {
+
+.#{$primaryStyleName}-wrapper {
+	position: absolute;
+	overflow:hidden;
+}
+
+}

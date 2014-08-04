@@ -1,0 +1,105 @@
+@IMPORT url("./baseStyles.css");
+
+
+.v-tree-mitsAdminCommands .v-tree-node {
+	background: none;
+	background-position: left;
+}
+
+.v-tree-mitsAdminCommands .v-tree-node-caption {
+	font-size: 16px;
+	padding-top: 6px;
+	padding-bottom: 6px;	
+}
+
+.v-tree-mitsAdminCommands .v-tree-node-caption:hover {
+    font-size: 19px;
+}
+
+.v-slot .v-select-optiongroup-horizontal .v-select-option {
+    display: inline-block;
+}
+
+.v-horizontal {
+    display: inline-block;
+}
+
+.validationMessage {
+	color: red;	
+	margin-left: 5px;
+}
+
+.v-slot .v-select-optiongroup-horizontal {
+    white-space: nowrap;
+}
+
+.v-slot .v-select-optiongroup-horizontal  .v-select-option .v-radiobutton {
+    padding-right: 10px;
+}
+
+.v-slot .v-label-lblTitle {
+	font-size: large;
+	font-weight: bolder;
+	margin-top: 12px;
+}
+
+.v-slot .v-label-lblCaption {
+	margin-left: 5px;
+}
+
+.mits .v-errorindicator {
+	visibility: hidden;
+	width: 0px;
+    height: 0px;
+}
+
+.mits .v-embedded-imgTopLeftLogo img {
+	width: 100px;
+	height: 50px;	
+}
+
+.mits .v-horizontallayout-userMainPageHeader {
+	background-color: #93ccdd;
+}
+
+.mits .v-slot-userMainPageContent {
+	background-color: white;
+}
+
+.mits .v-label-labelFachArzt {
+	font-size: x-large;
+	font-weight: bold;
+	color: white;
+}
+
+.mits .v-label-lblMainPageActions {
+	font-size: large;
+	font-weight: bold;
+	color: #31859c;
+}
+
+.mits .v-slot-imgMainPageLogo {
+	margin: -100px;
+}
+
+.mits .v-slot-btnMainPageActions img {
+	width: 125px;
+	height: 125px;
+}
+
+
+.mits .v-slot-headerActionButtons img {
+	width: 50px;
+	height: 50px;
+}
+
+.mits .v-slot-headerActionButtons {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.abteilung {
+	font-size: large;
+	font-weight: bold;
+	color: gray;
+}

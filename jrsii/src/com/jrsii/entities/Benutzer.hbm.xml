@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 31, 2014 12:26:00 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.jrsii.entities.Benutzer" table="BENUTZER">
+        <id name="benutzername" type="java.lang.String">
+            <column name="BENUTZERNAME" />
+            <generator class="assigned" />
+        </id>
+        <property name="kennwort" type="java.lang.String">
+            <column name="KENNWORT" />
+        </property>
+        <property name="stellung" type="java.lang.String">
+            <column name="STELLUNG" />
+        </property>
+        <property name="vorname" type="java.lang.String">
+            <column name="VORNAME" />
+        </property>
+        <property name="nachname" type="java.lang.String">
+            <column name="NACHNAME" />
+        </property>
+        <property name="geburtsdatum" type="java.util.Date">
+            <column name="GEBURTSDATUM" />
+        </property>
+        <property name="enabled" type="java.lang.Boolean">
+            <column name="ENABLED" />
+        </property>
+        <property name="admin" type="java.lang.Boolean">
+            <column name="ADMIN" />
+        </property>
+    </class>
+</hibernate-mapping>
