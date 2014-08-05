@@ -125,6 +125,9 @@ public class Admin_NeuebenutzernameHinzufuegenBestaetigen extends
 		benutzer.setKennwort(label_KennwortResult.getValue());
 		benutzer.setGeburtsdatum(DataNeueBenutzerHinzufuegen.dataGeburtsdatumDate);
 		benutzer.setEnabled(true);
+		//TODO : add a comboBox in the Admin_benutzerhinuFuegen and add the option to choose as
+		// a admin or do not.
+		benutzer.setAdmin(false);
 		
 		try {
 			button_Hinzufuegen.addClickListener(new Button.ClickListener() {

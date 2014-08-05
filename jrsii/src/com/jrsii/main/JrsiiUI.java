@@ -9,7 +9,6 @@ import com.jrsii.view.backend.AdminPage;
 import com.jrsii.view.frontend.Admin_NeueBenutzerHinzufuegen;
 import com.jrsii.view.frontend.Admin_NeuebenutzernameHinzufuegenBestaetigen;
 import com.jrsii.view.frontend.Login;
-import com.jrsii.view.frontend.UserHomePage;
 import com.vaadin.addon.jpacontainer.JPAContainerFactory;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
@@ -34,7 +33,6 @@ import com.vaadin.ui.VerticalLayout;
 @Theme("mits")
 public class JrsiiUI extends UI {
 	
-	private static Benutzer benutzerTemp;
 	@WebServlet(value = "/*", asyncSupported = true)
 	@VaadinServletConfiguration(productionMode = false, ui = JrsiiUI.class, widgetset = "com.jrsii.main.widgetset.JrsiiWidgetset")
 	public static class Servlet extends VaadinServlet {

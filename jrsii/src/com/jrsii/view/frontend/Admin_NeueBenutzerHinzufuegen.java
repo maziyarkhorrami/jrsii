@@ -11,6 +11,7 @@ import com.vaadin.ui.AbsoluteLayout;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.ComboBox;
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.GridLayout;
 import com.vaadin.ui.HorizontalLayout;
@@ -93,6 +94,7 @@ public class Admin_NeueBenutzerHinzufuegen extends CustomComponent implements Vi
 	public Admin_NeueBenutzerHinzufuegen( ) {
 		buildMainLayout();
 		setCompositionRoot(mainLayout);
+		
 
 		popupDateField_Geburtsdatum.setValue(new Date());
 		popupDateField_Geburtsdatum.setDateFormat("yyyy-MM-dd");

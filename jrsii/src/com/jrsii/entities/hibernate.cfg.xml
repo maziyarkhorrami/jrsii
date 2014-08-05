@@ -13,5 +13,10 @@
         <property name="hibernate.search.autoregister_listeners">false</property>
 
         <mapping resource="com/jrsii/entities/Benutzer.hbm.xml" />
+        <mapping resource="com/jrsii/entities/Adressen.hbm.xml" />
+        <mapping resource="com/jrsii/entities/Adressgruppen.hbm.xml" />
+        <mapping resource="com/jrsii/entities/Adressgruppenverweise.hbm.xml" />
+        <mapping resource="com/jrsii/entities/Anschriften.hbm.xml" />
+        <mapping resource="com/jrsii/entities/Verbindungen.hbm.xml" />
     </session-factory>
 </hibernate-configuration>

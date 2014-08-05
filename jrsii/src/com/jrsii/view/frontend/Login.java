@@ -34,6 +34,7 @@ public class Login extends CustomComponent implements View {
 	private static Benutzer benutzerTemp;
 	public static final String LOGIN_PAGE  = "loginPage";
 	public Navigator navigator;
+	public static final String PERSISTANCE_UNIT = "jrsdbmysql";
 
 	/**
 	 * The constructor should first build the main layout, set the
@@ -59,7 +60,7 @@ public class Login extends CustomComponent implements View {
 			public void buttonClick(ClickEvent event) {
 				String usernameStr = usernameTxt.getValue();
 				String passwordStr = passwordTxt.getValue(); 
-				EntityManager em = JPAContainerFactory.createEntityManagerForPersistenceUnit("jrsdbmysql");
+				EntityManager em = JPAContainerFactory.createEntityManagerForPersistenceUnit(PERSISTANCE_UNIT);
 				
 				javax.persistence.Query q = em.createQuery("FROM Benutzer b WHERE b.benutzername = ?1 AND  b.kennwort = ?2 ");
 					q.setParameter(1, usernameStr);
@@ -79,7 +80,9 @@ public class Login extends CustomComponent implements View {
 //									JrsiiUI.getCurrent().setContent(new AdminPage());
 								} else { 
 									 Login.setBenutzer(benutzer);
-									 JrsiiUI.getCurrent().setContent(new UserHomePage());
+									 navigator.addView(com.jrsii.main.frontend.user.UserHomePage.USER_HOME_PAGE, new com.jrsii.main.frontend.user.UserHomePage());
+									 navigator.navigateTo(com.jrsii.main.frontend.user.UserHomePage.USER_HOME_PAGE);
+//									 JrsiiUI.getCurrent().setContent(new UserHomePage());
 								} } else {
 								JrsiiUI.getCurrent().setContent(new JrsiiUI());
 								Notification.show("The user is not registered yet",Type.ERROR_MESSAGE);
